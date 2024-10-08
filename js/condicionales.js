@@ -17,12 +17,10 @@ const edad = parseInt(prompt("ingrese su edad"));
 if (edad >= 1 && edad <= 105) {
   if ((edad >= 16 && edad <= 17) || edad >= 70) {
     document.write("es optativo que votes");
+  } else if (edad >= 18 && edad <= 70) {
+    document.write("es obligatorio que votes");
   } else {
-    if (edad >= 18 && edad <= 70) {
-      document.write("es obligatorio que votes");
-    } else {
-      document.write("no puedes votar");
-    }
+    document.write("no puedes votar");
   }
 } else {
   alert("ingresaste un valor invalido");

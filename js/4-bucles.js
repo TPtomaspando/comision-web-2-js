@@ -31,3 +31,18 @@ agregar una linea de codigo que haga que en algun momento la condicon no se cump
 //document.write("<p>Numero: " + numero + "</p>");
 //numero++; //numero = numero +1
 //} while (numero <= 100);
+
+//for si se cumple la condicion se ejecuta el codigo
+
+/*
+for(inicializar una variable;condcion logica;incrementar o decrementar la variable inicializada)
+todas las lineas de codigo que quiero ejecutar
+
+
+*/
+
+//quiero crear una cuenta regresiva de 10 a 0
+
+for (let cuenta = 10; cuenta >= 0; cuenta--) {
+  document.write("<p>Cuenta regresiva: " + cuenta + "</p>");
+}

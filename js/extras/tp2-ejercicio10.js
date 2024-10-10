@@ -2,16 +2,17 @@
 
 const filas = parseInt(prompt("ingrese una cantidad de filas"));
 const columnas = parseInt(prompt("ingrese una cantidad de columnas"));
-
+let celda = filas * columnas;
 document.write(`<table>
       <tbody>`);
 
 for (let indiceFilas = 1; indiceFilas <= filas; indiceFilas++) {
-  document.write(`
-          <tr>
-            <td>35</td>
-          </tr>
-        `);
+  document.write(`<tr>`);
+
+  for (indiceColumnas = 1; indiceColumnas <= columnas; indiceColumnas++) {
+    document.write(`<td>35${celda}</td>`);
+  }
+  document.write(`</tr>`);
 }
 
 document.write(`

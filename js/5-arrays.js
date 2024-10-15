@@ -31,3 +31,52 @@ for (let i = 0; i < peliculas.length; i++) {
   <li>peliculas[2]</li>
   <li>peliculas[3]</li>
 </ul>;
+
+//agregar elementos en el array
+//agregar elemento al principio del array
+peliculas.unshift("intelestelar", "los increibles");
+document.write(
+  "<h2>integramos 2 elementos al principio del array, peliculas</h2>" +
+    peliculas.length
+);
+document.write("<ul>");
+for (let i = 0; i < peliculas.length; i++) {
+  document.write(`<li>${peliculas[i]}</li>`);
+}
+document.write("</ul>");
+
+//agregar elemento al final del array
+peliculas.push("furia de titanes");
+document.write(
+  "<h2>integramos 1 elemento al final del array, peliculas</h2>" +
+    peliculas.length
+);
+document.write("<ul>");
+for (let i = 0; i < peliculas.length; i++) {
+  document.write(`<li>${peliculas[i]}</li>`);
+}
+document.write("</ul>");
+
+peliculas.splice(3, 0, "spiderman no way home");
+document.write(
+  "<h2>integramos 1 elemento en el medio del array, peliculas</h2>" +
+    peliculas.length
+);
+document.write("<ul>");
+for (let i = 0; i < peliculas.length; i++) {
+  document.write(`<li>${peliculas[i]}</li>`);
+}
+document.write("</ul>");
+
+//modificar elementos en el array
+peliculas[4] = "Cars 1";
+document.write(
+  "<h2>Modificamos un elemento del array, peliculas</h2>" + peliculas.length
+);
+document.write("<ul>");
+for (let i = 0; i < peliculas.length; i++) {
+  document.write(`<li>${peliculas[i]}</li>`);
+}
+document.write("</ul>");
+
+//borrar elememtos en el array

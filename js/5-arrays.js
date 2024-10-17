@@ -80,3 +80,38 @@ for (let i = 0; i < peliculas.length; i++) {
 document.write("</ul>");
 
 //borrar elememtos en el array
+//borrar elementos al principio
+peliculas.shift();
+document.write(
+  "<h2>Borramos un elemento del principio del array, peliculas</h2>" +
+    peliculas.length
+);
+document.write("<ul>");
+for (let i = 0; i < peliculas.length; i++) {
+  document.write(`<li>${peliculas[i]}</li>`);
+}
+document.write("</ul>");
+
+//borrar al final
+peliculas.pop();
+document.write(
+  "<h2>Borramos el ultimo elemento del array, peliculas</h2>" + peliculas.length
+);
+document.write("<ul>");
+for (let i = 0; i < peliculas.length; i++) {
+  document.write(`<li>${peliculas[i]}</li>`);
+}
+document.write("</ul>");
+
+//borrar en el medio del array
+
+peliculas.splice(4, 1);
+document.write(
+  "<h2>Borramos un elemento del medio del array, peliculas</h2>" +
+    peliculas.length
+);
+document.write("<ul>");
+for (let i = 0; i < peliculas.length; i++) {
+  document.write(`<li>${peliculas[i]}</li>`);
+}
+document.write("</ul>");

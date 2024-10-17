@@ -18,6 +18,12 @@ function sumar(numero1, numero2) {
   return total;
 }
 
+//arrow function
+const sumar = (numero1, numero2) => {
+  const total = numero1 + numero2;
+  return total;
+};
+
 //usar function
 saludar();
 

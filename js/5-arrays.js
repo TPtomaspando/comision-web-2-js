@@ -115,3 +115,22 @@ for (let i = 0; i < peliculas.length; i++) {
   document.write(`<li>${peliculas[i]}</li>`);
 }
 document.write("</ul>");
+
+//quiero encontrar un elemento en el array "titanic"
+
+const encontreTitanic = peliculas.find(
+  (itemPelicula) => itemPelicula === "Titanic"
+);
+console.log(encontreTitanic);
+
+//buscamos la posicion de las peliculas anteriores
+const posicionPeliTitanic = peliculas.findIndex((item) => item === "Titanic");
+
+document.write(
+  `<p>peli encontrada ${encontreTitanic}, esta en la posicion ${posicionPeliTitanic} de </p>`
+);
+
+//quiero filtrar elementos del array
+const sagaShrek = peliculas.filter((pelicula) => pelicula.includes("shrek"));
+console.log(peliculas[1].includes("shrek"));
+console.log(sagaShrek);

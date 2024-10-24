@@ -130,6 +130,17 @@ document.write(
   `<p>peli encontrada ${encontreTitanic}, esta en la posicion ${posicionPeliTitanic} de </p>`
 );
 
+//operador terneario ? !
+
+//(condicion logica) ? lo que deberia ser si se cumple la condicion, lo que deberia ser si no se cumple la condicion
+
+document.write(
+  $,
+  { encontreTitanic }
+    ? `<p>peli encontrada ${encontreTitanic}, esta en la posicion ${posicionPeliTitanic} de </p>`
+    : `<p>no se enocntro la pelicula desada</p>`
+);
+
 //quiero filtrar elementos del array
 const sagaShrek = peliculas.filter((pelicula) => pelicula.includes("shrek"));
 console.log(peliculas[1].includes("shrek"));
